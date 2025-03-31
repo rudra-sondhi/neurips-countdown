@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeurIPS Deadline Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NeurIPS Countdown</h1>
+        
+        <div class="datetime-container">
+            <div class="date-display" id="current-date"></div>
+            <div class="time-display" id="current-time"></div>
+        </div>
+        
+        <div class="deadlines">
+            <div class="deadline abstract">
+                <span class="deadline-label">Abstract Deadline:</span>
+                <div class="countdown-display">
+                    <span id="abstract-days" class="days-count"></span>
+                    <span class="days-label">days left</span>
+                </div>
+                <span class="deadline-date">May 11, 2025</span>
+            </div>
+            
+            <div class="deadline paper">
+                <span class="deadline-label">Full Paper:</span>
+                <div class="countdown-display">
+                    <span id="paper-days" class="days-count"></span>
+                    <span class="days-label">days left</span>
+                </div>
+                <span class="deadline-date">May 15, 2025</span>
+            </div>
+            
+            <div class="deadline supplemental">
+                <span class="deadline-label">Supplemental:</span>
+                <div class="countdown-display">
+                    <span id="supplemental-days" class="days-count"></span>
+                    <span class="days-label">days left</span>
+                </div>
+                <span class="deadline-date">May 22, 2025</span>
+            </div>
+        </div>
+        
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <span id="calendar-month-year"></span>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="calendar-days" id="calendar-days"></div>
+        </div>
+        
+        <div class="tasks-container">
+            <h2>NeurIPS Tasks</h2>
+            
+            <div class="add-task">
+                <input type="text" id="new-task-input" placeholder="Add a new task...">
+                <button id="add-task-btn">Add</button>
+            </div>
+            
+            <div class="task-lists">
+                <div class="task-list assigned">
+                    <h3><span class="indicator"></span>Assigned</h3>
+                    <ul id="assigned-tasks"></ul>
+                </div>
+                
+                <div class="task-list completed">
+                    <h3><span class="indicator"></span>Completed</h3>
+                    <ul id="completed-tasks"></ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <span class="flash">⚡</span> 
+            <span>NeurIPS 2025</span>
+            <span class="flash">⚡</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
